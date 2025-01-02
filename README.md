@@ -70,3 +70,42 @@ const humanChoosed = getHumanChoice();
 console.log(computerChoosed, humanChoosed);
 console.log(playRound(computerChoosed, humanChoosed));
 ```
+
+- Step 5: Completed the playGame function
+
+```JavaScript
+function playRound(computerChoosed, humanChoosed) {
+  if (computerChoosed == humanChoosed) {
+    humanScore = humanScore;
+    computerScore = computerScore;
+  } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
+    computerScore++;
+  } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
+    computerScore++;
+  } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
+    computerScore++;
+  } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
+    humanScore++;
+  } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
+    humanScore++;
+  } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
+    humanScore++;
+  }
+  console.log(computerScore, humanScore);
+}
+function playGame() {
+  for (let i = 0; i < 5; i++) {
+    playRound(getComputerChoice(), getHumanChoice());
+  }
+}
+
+playGame();
+
+if (computerScore > humanScore) {
+  console.log("Computer wins.");
+} else if (humanScore > computerScore) {
+  console.log("Human Wins.");
+} else {
+  console.log("Tie.");
+}
+```
