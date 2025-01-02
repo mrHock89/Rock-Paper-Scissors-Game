@@ -52,13 +52,13 @@ function playGame() {
   for (let i = 0; i < 5; i++) {
     playRound(getComputerChoice(), getHumanChoice());
   }
+  if (computerScore > humanScore) {
+    alert("Computer wins.");
+  } else if (humanScore > computerScore) {
+    alert("Human Wins.");
+  } else {
+    alert("Tie.");
+  }
 }
 
 playGame();
-if (computerScore > humanScore) {
-  alert("Computer wins.");
-} else if (humanScore > computerScore) {
-  alert("Human Wins.");
-} else {
-  alert("Tie.");
-}
