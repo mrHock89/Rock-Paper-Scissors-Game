@@ -28,29 +28,59 @@ function getHumanChoice() {
 // console.log(getHumanChoice());
 
 // Function for single play
-const humanScore = 0;
-const computerScore = 0;
+// const humanScore = 0;
+// const computerScore = 0;
 
-function playRound(computerChoosed, humanChoosed) {
-  if (computerChoosed == humanChoosed) {
-    // humanScore = humanScore;
-    // computerScore = computerScore;
-    return `Both choosed same.`;
-  } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
-    return `${computerChoosed} beats ${humanChoosed}.`;
-  } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
-    return `${computerChoosed} beats ${humanChoosed}.`;
-  } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
-    return `${computerChoosed} beats ${humanChoosed}.`;
-  } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
-    return `${humanChoosed} beats ${computerChoosed}.`;
-  } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
-    return `${humanChoosed} beats ${computerChoosed}.`;
-  } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
-    return `${humanChoosed} beats ${computerChoosed}.`;
-  } else return `Wrong Choice.`;
+// function playRound(computerChoosed, humanChoosed) {
+//   if (computerChoosed == humanChoosed) {
+//     // humanScore = humanScore;
+//     // computerScore = computerScore;
+//     return `Both choosed same.`;
+//   } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
+//     return `${computerChoosed} beats ${humanChoosed}.`;
+//   } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
+//     return `${computerChoosed} beats ${humanChoosed}.`;
+//   } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
+//     return `${computerChoosed} beats ${humanChoosed}.`;
+//   } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
+//     return `${humanChoosed} beats ${computerChoosed}.`;
+//   } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
+//     return `${humanChoosed} beats ${computerChoosed}.`;
+//   } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
+//     return `${humanChoosed} beats ${computerChoosed}.`;
+//   } else return `Wrong Choice.`;
+// }
+// const computerChoosed = getComputerChoice();
+// const humanChoosed = getHumanChoice();
+// console.log(computerChoosed, humanChoosed);
+// console.log(playRound(computerChoosed, humanChoosed));
+
+function playGame() {
+  const humanScore = 0;
+  const computerScore = 0;
+
+  function playRound(computerChoosed, humanChoosed) {
+    if (computerChoosed == humanChoosed) {
+      // humanScore = humanScore;
+      // computerScore = computerScore;
+      return `Both choosed same.`;
+    } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
+      return `${computerChoosed} beats ${humanChoosed}.`;
+    } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
+      return `${computerChoosed} beats ${humanChoosed}.`;
+    } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
+      return `${computerChoosed} beats ${humanChoosed}.`;
+    } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
+      return `${humanChoosed} beats ${computerChoosed}.`;
+    } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
+      return `${humanChoosed} beats ${computerChoosed}.`;
+    } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
+      return `${humanChoosed} beats ${computerChoosed}.`;
+    } else return `Wrong Choice.`;
+  }
+  const computerChoosed = getComputerChoice();
+  const humanChoosed = getHumanChoice();
+  console.log(playRound(computerChoosed, humanChoosed));
 }
-const computerChoosed = getComputerChoice();
-const humanChoosed = getHumanChoice();
-console.log(computerChoosed, humanChoosed);
-console.log(playRound(computerChoosed, humanChoosed));
+
+playGame();
