@@ -61,25 +61,37 @@ function playGame() {
 
   function playRound(computerChoosed, humanChoosed) {
     if (computerChoosed == humanChoosed) {
-      // humanScore = humanScore;
-      // computerScore = computerScore;
-      return `Both choosed same.`;
+      humanScore = humanScore;
+      computerScore = computerScore;
+      //   return `Both choosed same.`;
     } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
-      return `${computerChoosed} beats ${humanChoosed}.`;
+      //   return `${computerChoosed} beats ${humanChoosed}.`;
+      computerScore++;
     } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
-      return `${computerChoosed} beats ${humanChoosed}.`;
+      //   return `${computerChoosed} beats ${humanChoosed}.`;
+      computerScore++;
     } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
-      return `${computerChoosed} beats ${humanChoosed}.`;
+      //   return `${computerChoosed} beats ${humanChoosed}.`;
+      computerScore++;
     } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
-      return `${humanChoosed} beats ${computerChoosed}.`;
+      //   return `${humanChoosed} beats ${computerChoosed}.`;
+      humanScore++;
     } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
-      return `${humanChoosed} beats ${computerChoosed}.`;
+      //   return `${humanChoosed} beats ${computerChoosed}.`;
+      humanScore++;
     } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
-      return `${humanChoosed} beats ${computerChoosed}.`;
+      //   return `${humanChoosed} beats ${computerChoosed}.`;
+      humanScore++;
     } else return `Wrong Choice.`;
+    console.log(`The score of Computer is ${computerScore}`);
+    console.log(`The score of Human is ${humanScore}`);
   }
   const computerChoosed = getComputerChoice();
   const humanChoosed = getHumanChoice();
+  console.log(playRound(computerChoosed, humanChoosed));
+  console.log(playRound(computerChoosed, humanChoosed));
+  console.log(playRound(computerChoosed, humanChoosed));
+  console.log(playRound(computerChoosed, humanChoosed));
   console.log(playRound(computerChoosed, humanChoosed));
 }
 
