@@ -1,5 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
+
 // for computer choice
 function getComputerChoice() {
   const min = 0;
@@ -13,12 +14,12 @@ function getComputerChoice() {
     return "Scissors";
   }
 }
-// const computerChoice = getComputerChoice();
-// console.log(computerChoice);
 
 // Human Choice
 function getHumanChoice() {
-  const number = prompt("Enter 1. Rock 2. Paper and 3. Scissors");
+  const number = prompt(
+    "Enter from 1 to 3\n 1. Rock \n 2. Paper \n 3. Scissors"
+  );
   if (number == 1) {
     return "Rock";
   } else if (number == 2) {
@@ -27,35 +28,6 @@ function getHumanChoice() {
     return "Scissors";
   }
 }
-// console.log(getHumanChoice());
-
-// Function for single play
-// const humanScore = 0;
-// const computerScore = 0;
-
-// function playRound(computerChoosed, humanChoosed) {
-//   if (computerChoosed == humanChoosed) {
-//     // humanScore = humanScore;
-//     // computerScore = computerScore;
-//     return `Both choosed same.`;
-//   } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
-//     return `${computerChoosed} beats ${humanChoosed}.`;
-//   } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
-//     return `${computerChoosed} beats ${humanChoosed}.`;
-//   } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
-//     return `${computerChoosed} beats ${humanChoosed}.`;
-//   } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
-//     return `${humanChoosed} beats ${computerChoosed}.`;
-//   } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
-//     return `${humanChoosed} beats ${computerChoosed}.`;
-//   } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
-//     return `${humanChoosed} beats ${computerChoosed}.`;
-//   } else return `Wrong Choice.`;
-// }
-// const computerChoosed = getComputerChoice();
-// const humanChoosed = getHumanChoice();
-// console.log(computerChoosed, humanChoosed);
-// console.log(playRound(computerChoosed, humanChoosed));
 
 function playRound(computerChoosed, humanChoosed) {
   if (computerChoosed == humanChoosed) {
@@ -83,11 +55,10 @@ function playGame() {
 }
 
 playGame();
-
 if (computerScore > humanScore) {
-  console.log("Computer wins.");
+  alert("Computer wins.");
 } else if (humanScore > computerScore) {
-  console.log("Human Wins.");
+  alert("Human Wins.");
 } else {
-  console.log("Tie.");
+  alert("Tie.");
 }
