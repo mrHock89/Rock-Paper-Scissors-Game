@@ -38,13 +38,13 @@ function playRound(computerChoosed, humanChoosed) {
     return `Both choosed same.`;
   } else if (computerChoosed == "Rock" && humanChoosed == "Scissors") {
     return `${computerChoosed} beats ${humanChoosed}.`;
-  } else if (computerChoosed == "Sciisor" && humanChoosed == "Paper") {
+  } else if (computerChoosed == "Scissors" && humanChoosed == "Paper") {
     return `${computerChoosed} beats ${humanChoosed}.`;
   } else if (computerChoosed == "Paper" && humanChoosed == "Rock") {
     return `${computerChoosed} beats ${humanChoosed}.`;
   } else if (humanChoosed == "Rock" && computerChoosed == "Scissors") {
     return `${humanChoosed} beats ${computerChoosed}.`;
-  } else if (humanChoosed == "Sciisor" && computerChoosed == "Paper") {
+  } else if (humanChoosed == "Scissors" && computerChoosed == "Paper") {
     return `${humanChoosed} beats ${computerChoosed}.`;
   } else if (humanChoosed == "Paper" && computerChoosed == "Rock") {
     return `${humanChoosed} beats ${computerChoosed}.`;
