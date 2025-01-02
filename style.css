@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #292e32ff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  overflow: hidden;
+}
+h1 {
+  font-size: 40px;
+  color: green;
+  font-weight: bolder;
+}
+button {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.2);
+}
