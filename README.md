@@ -109,3 +109,7 @@ if (computerScore > humanScore) {
   console.log("Tie.");
 }
 ```
+
+# Preview
+
+![Rock-Paper-Scossors-Game](./rock_paper_scissorter.gif)
