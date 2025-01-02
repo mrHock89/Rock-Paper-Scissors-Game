@@ -52,6 +52,7 @@ function playGame() {
   for (let i = 0; i < 5; i++) {
     playRound(getComputerChoice(), getHumanChoice());
   }
+  // Added for showing winner output every time
   if (computerScore > humanScore) {
     alert("Computer wins.");
   } else if (humanScore > computerScore) {
