@@ -48,18 +48,18 @@ function playRound(computerChoosed, humanChoosed) {
   }
   console.log(computerScore, humanScore);
 }
-function playGame() {
-  for (let i = 0; i < 5; i++) {
-    playRound(getComputerChoice(), getHumanChoice());
-  }
-  // Added for showing winner output every time
-  if (computerScore > humanScore) {
-    alert("Computer wins.");
-  } else if (humanScore > computerScore) {
-    alert("Human Wins.");
-  } else {
-    alert("Tie.");
-  }
-}
+// function playGame() {
+//   for (let i = 0; i < 5; i++) {
+//     playRound(getComputerChoice(), getHumanChoice());
+//   }
+//   // Added for showing winner output every time
+//   if (computerScore > humanScore) {
+//     alert("Computer wins.");
+//   } else if (humanScore > computerScore) {
+//     alert("Human Wins.");
+//   } else {
+//     alert("Tie.");
+//   }
+// }
 
 // playGame();
