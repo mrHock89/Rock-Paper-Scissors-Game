@@ -65,3 +65,16 @@
 // // }
 
 // // playGame();
+
+// have to create a function that will return computer choice
+
+function computerChoice() {
+  let com_choice = ["Rock", "Paper", "Scissors"];
+
+  // have to build logic by which we can select the computer choice form the array ramdomly
+  let i = Math.floor(Math.random() * com_choice.length);
+  let r = com_choice[i];
+  // console.log(`i: ${i} and r:  ${r}`);
+  return r;
+}
+console.log(computerChoice());
