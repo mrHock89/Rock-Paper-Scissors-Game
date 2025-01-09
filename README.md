@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors-Game
+<!-- # Rock-Paper-Scissors-Game
 
 This is the project to create Rock Paper Scissors game.
 
@@ -112,4 +112,4 @@ if (computerScore > humanScore) {
 
 # Preview
 
-![Rock-Paper-Scossors-Game](./rock_paper_scissorter.gif)
+![Rock-Paper-Scossors-Game](./rock_paper_scissorter.gif) -->
