@@ -210,7 +210,7 @@ scoreDiv.setAttribute(
 scoreDiv.appendChild(infoScore);
 scoreDiv.appendChild(humanScoreBoard);
 scoreDiv.appendChild(computerScoreBoard);
-
+mainBody.appendChild(scoreDiv);
 // function playRound(computerChoosed, humanChoosed) {
 //   if (humanChoosed == "Reset") {
 //     humanScore = 0;
