@@ -132,7 +132,7 @@ function playGame(computerMove, humanMove) {
   if (humanMove === "Reset") {
     computerScore = 0;
     humanScore = 0;
-    updateScoreInScoreBoard(computerScore, humanScore, "Get is Restarted!");
+    updateScoreInScoreBoard(computerScore, humanScore, "Get Restarted!");
   }
   if (computerMove === humanMove) {
     updateScoreInScoreBoard(
@@ -189,29 +189,43 @@ function playGame(computerMove, humanMove) {
 }
 
 function scoreBoard(computerScore, humanScore) {
-  if (computerScore == 5) {
-    winMessage.textContent = "Computer is the winner!";
-    scoreDiv.appendChild(winMessage);
-  } else if (humanScore == 5) {
-    winMessage.textContent = "Human is the winner";
-    scoreDiv.appendChild(winMessage);
+  // if (computerScore == 5) {
+  //   winMessage.textContent = "Computer is the winner!";
+  //   scoreDiv.appendChild(winMessage);
+  // } else if (humanScore == 5) {
+  //   winMessage.textContent = "Human is the winner";
+  //   scoreDiv.appendChild(winMessage);
+  // }
+
+  if (computerScore === 5 || humanScore === 5) {
+    if (!winMessage.textContent) {
+      winMessage.textContent =
+        computerScore === 5
+          ? "Computer is the winner!"
+          : "Human is the winner!";
+      scoreDiv.appendChild(winMessage);
+    }
   }
 }
 
 infoScore.style.color = "blue";
 infoScore.style.fontStyle = "italic";
 
-humanScoreBoard.textContent = "Human Score: " + humanScore;
-computerScoreBoard.textContent = "Computer Score: " + computerScore;
+humanScoreBoard.textContent = `Human Score: ${humanScore}`;
+computerScoreBoard.textContent = `Computer Score: ${computerScore}`;
 
-scoreDiv.setAttribute(
-  "style",
-  "margin-top: 15px; padding: 5px; border: 3px solid black;"
-);
+// scoreDiv.setAttribute(
+//   "style",
+//   "margin-top: 15px; padding: 5px; border: 3px solid black;"
+// );
+scoreDiv.style.cssText =
+  "margin-top: 15px; padding: 5px; border: 3px solid black;";
 
-scoreDiv.appendChild(infoScore);
-scoreDiv.appendChild(humanScoreBoard);
-scoreDiv.appendChild(computerScoreBoard);
+// scoreDiv.appendChild(infoScore);
+// scoreDiv.appendChild(humanScoreBoard);
+// scoreDiv.appendChild(computerScoreBoard);
+// mainBody.appendChild(scoreDiv);
+scoreDiv.append(infoScore, humanScoreBoard, computerScoreBoard);
 mainBody.appendChild(scoreDiv);
 // function playRound(computerChoosed, humanChoosed) {
 //   if (humanChoosed == "Reset") {
