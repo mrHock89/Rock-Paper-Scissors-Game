@@ -104,19 +104,21 @@ function computerChoice() {
 // human choice function
 let human_choice;
 let computer_choice;
-const buttons = document.querySelectorAll("button");
+window.onload = function () {
+  const buttons = document.querySelectorAll("button");
 
-buttons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    human_choice = button.id;
-    computer_choice = computerChoice();
-    console.log(
-      `Computer Choice: ${computer_choice} and Human Choice: ${human_choice}`
-    );
-    // Playing The game
-    playGame(computer_choice, human_choice);
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      human_choice = button.id;
+      computer_choice = computerChoice();
+      console.log(
+        `Computer Choice: ${computer_choice} and Human Choice: ${human_choice}`
+      );
+      // Playing The game
+      playGame(computer_choice, human_choice);
+    });
   });
-});
+};
 
 function playGame(computerMove, humanMove) {
   // a function that will update score
