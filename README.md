@@ -2,7 +2,7 @@
 
 This is the project to create Rock Paper Scissors game.
 
-## FOR MORE BASIC IMPLEMENTATION SWITCH TO `main` BRANCH
+## FOR MORE BASIC IMPLEMENTATION SWITCH TO `main-rps` BRANCH
 
 # Preview
 
