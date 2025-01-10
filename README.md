@@ -11,4 +11,5 @@ This is the project to create Rock Paper Scissors game.
 # SCREENSHOTS
 
 ![screenshot 1](./Screenshot_20250110_081542.png)
+
 ![screenshot 2](./Screenshot_20250110_081618.png)
