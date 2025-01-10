@@ -133,6 +133,8 @@ function playGame(computerMove, humanMove) {
     computerScore = 0;
     humanScore = 0;
     updateScoreInScoreBoard(computerScore, humanScore, "Get Restarted!");
+    winMessage.textContent = "";
+    return; // stop the game
   }
   if (computerMove === humanMove) {
     updateScoreInScoreBoard(
@@ -208,6 +210,7 @@ function scoreBoard(computerScore, humanScore) {
   }
 }
 
+// appending created elements
 infoScore.style.color = "blue";
 infoScore.style.fontStyle = "italic";
 

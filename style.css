@@ -7,8 +7,8 @@
   flex-direction: column;
   height: 100vh;
   background-color: #292e32ff;
-}
-.container {
+} */
+/* .container {
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -19,7 +19,7 @@
   border: 2px solid yellow;
   border-radius: 5px;
   overflow: hidden;
-}
+} */
 h1 {
   font-size: 40px;
   color: green;
@@ -37,4 +37,4 @@ button {
 }
 button:hover {
   transform: scale(1.2);
-} */
+}
